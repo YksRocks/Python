@@ -7,9 +7,10 @@ def angle_type():
     myDict = {"All angles are less than 90°.":"Acute Angle Triangle","Has a right angle (90°)":"Right Angle Triangle",
               "Has an angle more than 90°":"Obtuse Angle triangle"}
 
-    display = print("**************Enter the angles of your triangle to know it's type*********")
+    display = print("\t\t***********Enter the angles of your triangle to know it's type***********")
+    print("\t\t                 -------------------------------------------------------------------------------------------------")
 
-
+    print()
 
 # Taking Angle 1
 
@@ -59,7 +60,9 @@ def angle_type():
     if(sum_of_angles > 180 or sum_of_angles < 180):
         print("It is not a triangle!Please enter valid angles.")
         return -1
-
+    print()
+    print("\t\t=========================================")
+    print()
     print("You have entered : " +str(angles))
 
     if(angle1 == 90 or angle2 ==90 or angle3 == 90):
